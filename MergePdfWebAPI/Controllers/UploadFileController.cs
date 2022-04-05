@@ -4,12 +4,18 @@ using System.Net;
 using System.Web;
 using System.Net.Http;
 using System.Web.Http;
+using System.Diagnostics;
+using System.IO;
 
 namespace MergePdfWebAPI.Controllers
 {
     public class UploadFileController : ApiController
     {
-        [Route("api/docfile")]
+        public string Get()
+        {
+            return "result get";
+        }
+
         public HttpResponseMessage Post()
         {
             HttpResponseMessage result;
@@ -25,6 +31,21 @@ namespace MergePdfWebAPI.Controllers
                     docfiles.Add(filePath);
                 }
                 result = Request.CreateResponse(HttpStatusCode.Created, docfiles);
+
+                // запуск консольного приложения
+                Process myProcess = new Process();
+                myProcess.StartInfo.RedirectStandardOutput = true;
+                myProcess.StartInfo.FileName = @"C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-PDF\MergePdf\bin\Debug\MergePdf.exe";
+                myProcess.StartInfo.Arguments = docfiles[0];
+                myProcess.StartInfo.CreateNoWindow = true;
+                myProcess.StartInfo.UseShellExecute = false;
+                myProcess.Start();
+
+                string output = myProcess.StandardOutput.ReadToEnd();
+                myProcess.WaitForExit();
+                var resultProcess = myProcess.ExitCode.ToString();
+                result = Request.CreateResponse(HttpStatusCode.Created, resultProcess);
+
             }
             else
             {
