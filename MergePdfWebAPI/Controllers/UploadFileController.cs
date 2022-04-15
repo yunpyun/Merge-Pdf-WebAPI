@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Diagnostics;
 using System.IO;
+using MergePdfLib;
 
 namespace MergePdfWebAPI.Controllers
 {
@@ -20,32 +21,23 @@ namespace MergePdfWebAPI.Controllers
         {
             HttpResponseMessage result;
             var httpRequest = HttpContext.Current.Request;
+            HttpFileCollection uploadFiles = httpRequest.Files;
+            var docfiles = new List<string>();
+
             if (httpRequest.Files.Count > 0)
             {
-                var docfiles = new List<string>();
-                foreach (string file in httpRequest.Files)
+                for (int i = 0; i < uploadFiles.Count; i++)
                 {
-                    var postedFile = httpRequest.Files[file];
+                    HttpPostedFile postedFile = uploadFiles[i];
                     var filePath = HttpContext.Current.Server.MapPath("~/" + postedFile.FileName);
                     postedFile.SaveAs(filePath);
                     docfiles.Add(filePath);
                 }
-                result = Request.CreateResponse(HttpStatusCode.Created, docfiles);
 
-                // запуск консольного приложения
-                Process myProcess = new Process();
-                myProcess.StartInfo.RedirectStandardOutput = true;
-                myProcess.StartInfo.FileName = @"C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-PDF\MergePdf\bin\Debug\MergePdf.exe";
-                myProcess.StartInfo.Arguments = docfiles[0];
-                myProcess.StartInfo.CreateNoWindow = true;
-                myProcess.StartInfo.UseShellExecute = false;
-                myProcess.Start();
-
-                string output = myProcess.StandardOutput.ReadToEnd();
-                myProcess.WaitForExit();
-                var resultProcess = myProcess.ExitCode.ToString();
-                result = Request.CreateResponse(HttpStatusCode.Created, resultProcess);
-
+                // запуск библиотеки
+                Merge merge = new Merge();
+                string res = merge.MergeDocs(docfiles);
+                result = Request.CreateResponse(HttpStatusCode.Created, res);
             }
             else
             {

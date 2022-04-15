@@ -1,0 +1,14 @@
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfLib\bin\Debug\MergePdfLib.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfLib\bin\Debug\MergePdfLib.pdb
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfLib\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfLib\bin\Debug\GemBox.Document.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfLib\bin\Debug\GemBox.Pdf.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfLib\bin\Debug\Pkcs11Interop.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfLib\bin\Debug\GemBox.Document.xml
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfLib\bin\Debug\GemBox.Pdf.xml
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfLib\bin\Debug\Pkcs11Interop.xml
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfLib\obj\Debug\MergePdfLib.csproj.AssemblyReference.cache
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfLib\obj\Debug\MergePdfLib.csproj.CoreCompileInputs.cache
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfLib\obj\Debug\MergePdfLib.csproj.CopyComplete
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfLib\obj\Debug\MergePdfLib.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfLib\obj\Debug\MergePdfLib.pdb

@@ -188,3 +188,12 @@ C:\Users\Выймова Елена\Desktop\Материалы для работ�
 C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\obj\Debug\MergePdfWebAPI.csproj.CopyComplete
 C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\obj\Debug\MergePdfWebAPI.dll
 C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\obj\Debug\MergePdfWebAPI.pdb
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\MergePdfLib.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\GemBox.Document.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\GemBox.Pdf.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\BouncyCastle.Crypto.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Pkcs11Interop.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\MergePdfLib.pdb
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\GemBox.Document.xml
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\GemBox.Pdf.xml
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Pkcs11Interop.xml
