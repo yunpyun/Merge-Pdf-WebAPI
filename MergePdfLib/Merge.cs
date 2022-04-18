@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 using GemBox.Document;
 using GemBox.Pdf;
 
@@ -10,7 +11,7 @@ namespace MergePdfLib
 {
     public class Merge
     {
-        public string MergeDocs(List<string> docs)
+        public FileStream MergeDocs(List<string> docs)
         {
             // лицензирование GemBox
             GemBox.Document.ComponentInfo.SetLicense("FREE-LIMITED-KEY");
@@ -25,12 +26,23 @@ namespace MergePdfLib
                 }
             }
 
-            // объединение pdf файлов
-            MergeFiles(docs);
 
-            Console.WriteLine("Saving pdf done");
+            string fileName = @"C:\Users\Выймова Елена\Documents\MergeFilesStream.pdf";
+            int bufferSize = 4096;
 
-            return @"C:\Users\Выймова Елена\Documents\MergeFiles.pdf";
+            //Stream stream = new FileStream("MergeFiles.pdf", FileMode.Create);
+
+            using (FileStream fileStream = System.IO.File.Create(fileName, bufferSize, System.IO.FileOptions.DeleteOnClose))
+            {
+                // объединение pdf файлов
+                MergeFiles(docs, fileStream);
+
+                Console.WriteLine("Saving pdf done");
+
+                return fileStream;
+            }
+
+            //return @"C:\Users\Выймова Елена\Documents\MergeFiles.pdf";
         }
 
         static string SaveDoc(string destFileName)
@@ -41,7 +53,7 @@ namespace MergePdfLib
             return newName;
         }
 
-        static void MergeFiles(List<string> fileNames)
+        static void MergeFiles(List<string> fileNames, FileStream stream)
         {
             using (PdfDocument documentPdf = new PdfDocument())
             {
@@ -49,6 +61,7 @@ namespace MergePdfLib
                     using (var source = PdfDocument.Load(fileName))
                         documentPdf.Pages.Kids.AddClone(source.Pages);
 
+                documentPdf.Save(stream);
                 documentPdf.Save(@"C:\Users\Выймова Елена\Documents\MergeFiles.pdf");
             }
         }
