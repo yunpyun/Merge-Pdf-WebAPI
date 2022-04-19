@@ -11,7 +11,7 @@ namespace MergePdfLib
 {
     public class Merge
     {
-        public FileStream MergeDocs(List<string> docs)
+        public string MergeDocs(List<string> docs)
         {
             // лицензирование GemBox
             GemBox.Document.ComponentInfo.SetLicense("FREE-LIMITED-KEY");
@@ -28,19 +28,20 @@ namespace MergePdfLib
 
 
             string fileName = @"C:\Users\Выймова Елена\Documents\MergeFilesStream.pdf";
-            int bufferSize = 4096;
 
-            //Stream stream = new FileStream("MergeFiles.pdf", FileMode.Create);
+            var tempFiles = Path.GetTempFileName().Replace(".tmp", ".pdf");
 
-            using (FileStream fileStream = System.IO.File.Create(fileName, bufferSize, System.IO.FileOptions.DeleteOnClose))
-            {
-                // объединение pdf файлов
-                MergeFiles(docs, fileStream);
+            MergeFiles(docs, tempFiles);
 
-                Console.WriteLine("Saving pdf done");
+            return tempFiles;
 
-                return fileStream;
-            }
+            //using (var fileStream = File.OpenWrite(fileName))
+            //{
+            // объединение pdf файлов
+            //MergeFiles(docs, fileStream);
+
+            //return fileStream;
+            //}
 
             //return @"C:\Users\Выймова Елена\Documents\MergeFiles.pdf";
         }
@@ -53,7 +54,7 @@ namespace MergePdfLib
             return newName;
         }
 
-        static void MergeFiles(List<string> fileNames, FileStream stream)
+        static void MergeFiles(List<string> fileNames, string tempFiles)
         {
             using (PdfDocument documentPdf = new PdfDocument())
             {
@@ -61,8 +62,8 @@ namespace MergePdfLib
                     using (var source = PdfDocument.Load(fileName))
                         documentPdf.Pages.Kids.AddClone(source.Pages);
 
-                documentPdf.Save(stream);
-                documentPdf.Save(@"C:\Users\Выймова Елена\Documents\MergeFiles.pdf");
+                documentPdf.Save(tempFiles);
+                //documentPdf.Save(@"C:\Users\Выймова Елена\Documents\MergeFiles.pdf");
             }
         }
     }

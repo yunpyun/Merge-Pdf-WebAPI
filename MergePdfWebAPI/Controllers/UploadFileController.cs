@@ -28,19 +28,27 @@ namespace MergePdfWebAPI.Controllers
                 {
                     HttpPostedFile postedFile = uploadFiles[i];
                     var filePath = HttpContext.Current.Server.MapPath("~/" + postedFile.FileName);
-                    postedFile.SaveAs(filePath);
+                    //postedFile.SaveAs(filePath);
                     docfiles.Add(filePath);
                 }
 
                 // запуск библиотеки
                 Merge merge = new Merge();
-                FileStream res = merge.MergeDocs(docfiles);
+                string res = merge.MergeDocs(docfiles);
+
+                string fileName = "sample.pdf";
+                var dataBytes = File.ReadAllBytes(res);
+                //adding bytes to memory stream   
+                var dataStream = new MemoryStream(dataBytes);
 
                 HttpResponseMessage httpResponseMessage = Request.CreateResponse(HttpStatusCode.OK);
-                httpResponseMessage.Content = new StreamContent(res);
-                httpResponseMessage.Content.Headers.ContentDisposition = new System.Net.Http.Headers.ContentDispositionHeaderValue("attachment");
-                httpResponseMessage.Content.Headers.ContentDisposition.FileName = "MergeFiles.pdf";
+                httpResponseMessage.Content = new StreamContent(dataStream);
+                httpResponseMessage.Content.Headers.ContentDisposition = new System.Net.Http.Headers.ContentDispositionHeaderValue("attachment")
+                {
+                    FileName = fileName
+                };
                 httpResponseMessage.Content.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/octet-stream");
+                httpResponseMessage.Content.Headers.ContentLength = dataStream.Length;
 
                 //HttpResponseMessage httpResponseMessage = Request.CreateResponse(HttpStatusCode.Created, res);
                 result = httpResponseMessage;
