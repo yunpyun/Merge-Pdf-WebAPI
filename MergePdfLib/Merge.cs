@@ -26,30 +26,17 @@ namespace MergePdfLib
                 }
             }
 
-
-            string fileName = @"C:\Users\Выймова Елена\Documents\MergeFilesStream.pdf";
-
             var tempFiles = Path.GetTempFileName().Replace(".tmp", ".pdf");
 
             MergeFiles(docs, tempFiles);
 
             return tempFiles;
-
-            //using (var fileStream = File.OpenWrite(fileName))
-            //{
-            // объединение pdf файлов
-            //MergeFiles(docs, fileStream);
-
-            //return fileStream;
-            //}
-
-            //return @"C:\Users\Выймова Елена\Documents\MergeFiles.pdf";
         }
 
         static string SaveDoc(string destFileName)
         {
             DocumentModel documentDoc = DocumentModel.Load(destFileName);
-            string newName = @"C:\Users\Выймова Елена\Documents\OutputDocMerge.pdf";
+            string newName = Path.GetTempFileName().Replace(".tmp", ".pdf");
             documentDoc.Save(newName);
             return newName;
         }
@@ -63,7 +50,6 @@ namespace MergePdfLib
                         documentPdf.Pages.Kids.AddClone(source.Pages);
 
                 documentPdf.Save(tempFiles);
-                //documentPdf.Save(@"C:\Users\Выймова Елена\Documents\MergeFiles.pdf");
             }
         }
     }

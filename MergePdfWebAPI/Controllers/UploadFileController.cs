@@ -28,7 +28,7 @@ namespace MergePdfWebAPI.Controllers
                 {
                     HttpPostedFile postedFile = uploadFiles[i];
                     var filePath = HttpContext.Current.Server.MapPath("~/" + postedFile.FileName);
-                    //postedFile.SaveAs(filePath);
+                    postedFile.SaveAs(filePath);
                     docfiles.Add(filePath);
                 }
 
@@ -38,7 +38,6 @@ namespace MergePdfWebAPI.Controllers
 
                 string fileName = "sample.pdf";
                 var dataBytes = File.ReadAllBytes(res);
-                //adding bytes to memory stream   
                 var dataStream = new MemoryStream(dataBytes);
 
                 HttpResponseMessage httpResponseMessage = Request.CreateResponse(HttpStatusCode.OK);
@@ -50,7 +49,6 @@ namespace MergePdfWebAPI.Controllers
                 httpResponseMessage.Content.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/octet-stream");
                 httpResponseMessage.Content.Headers.ContentLength = dataStream.Length;
 
-                //HttpResponseMessage httpResponseMessage = Request.CreateResponse(HttpStatusCode.Created, res);
                 result = httpResponseMessage;
             }
             else
