@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergePdfWebAPI", "MergePdfWebAPI\MergePdfWebAPI.csproj", "{158C74F6-AABA-41F3-AE0C-F8D37303A215}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MergePdfWebAPI", "MergePdfWebAPI\MergePdfWebAPI.csproj", "{60A030FE-BCC4-4679-B822-3CF81758409F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergePdfLib", "MergePdfLib\MergePdfLib.csproj", "{6CE5EE15-79D9-4A71-BBB4-7001852A029B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergePdfLib", "MergePdfLib\MergePdfLib.csproj", "{235E919B-E7DC-411A-8887-35CCF0AEF0A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,19 +13,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{158C74F6-AABA-41F3-AE0C-F8D37303A215}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{158C74F6-AABA-41F3-AE0C-F8D37303A215}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{158C74F6-AABA-41F3-AE0C-F8D37303A215}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{158C74F6-AABA-41F3-AE0C-F8D37303A215}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6CE5EE15-79D9-4A71-BBB4-7001852A029B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6CE5EE15-79D9-4A71-BBB4-7001852A029B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6CE5EE15-79D9-4A71-BBB4-7001852A029B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6CE5EE15-79D9-4A71-BBB4-7001852A029B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60A030FE-BCC4-4679-B822-3CF81758409F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60A030FE-BCC4-4679-B822-3CF81758409F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60A030FE-BCC4-4679-B822-3CF81758409F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60A030FE-BCC4-4679-B822-3CF81758409F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{235E919B-E7DC-411A-8887-35CCF0AEF0A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{235E919B-E7DC-411A-8887-35CCF0AEF0A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{235E919B-E7DC-411A-8887-35CCF0AEF0A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{235E919B-E7DC-411A-8887-35CCF0AEF0A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {4420F99C-B8F3-4967-9E71-36D7BA895079}
+		SolutionGuid = {40C914CC-3982-4E9B-BD0F-4D0062BB3A23}
 	EndGlobalSection
 EndGlobal

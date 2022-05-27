@@ -1,7 +1,22 @@
-#Depending on the operating system of the host machines(s) that will build or run the containers, the image specified in the FROM statement may need to be changed.
-#For more information, please see https://aka.ms/containercompat 
+#See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
 
-FROM mcr.microsoft.com/dotnet/framework/aspnet:4.8-windowsservercore-ltsc2019
-ARG source
-WORKDIR /inetpub/wwwroot
-COPY ${source:-obj/Docker/publish} .
+FROM mcr.microsoft.com/dotnet/aspnet:3.1 AS base
+WORKDIR /app
+EXPOSE 80
+EXPOSE 443
+
+FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
+WORKDIR /src
+COPY ["MergePdfWebAPI/MergePdfWebAPI.csproj", "MergePdfWebAPI/"]
+RUN dotnet restore "MergePdfWebAPI/MergePdfWebAPI.csproj"
+COPY . .
+WORKDIR "/src/MergePdfWebAPI"
+RUN dotnet build "MergePdfWebAPI.csproj" -c Release -o /app/build
+
+FROM build AS publish
+RUN dotnet publish "MergePdfWebAPI.csproj" -c Release -o /app/publish
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "MergePdfWebAPI.dll"]

@@ -1,62 +1,64 @@
-﻿using MergePdfLib;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using System.IO;
 using System.Net;
 using System.Net.Http;
 using System.Web;
-using System.Web.Http;
+using MergePdfLib;
+using Microsoft.AspNetCore.Hosting;
 
 namespace MergePdfWebAPI.Controllers
 {
-    public class UploadFileController : ApiController
+    [Route("api/[controller]")]
+    [ApiController]
+    public class UploadFileController : ControllerBase
     {
+        [HttpGet]
         public string Get()
         {
             return "result get";
         }
 
-        public HttpResponseMessage Post()
+        [HttpPost]
+        public async Task<IActionResult> Upload(List<IFormFile> files)
         {
-            HttpResponseMessage result;
-            var httpRequest = HttpContext.Current.Request;
-            HttpFileCollection uploadFiles = httpRequest.Files;
             var docfiles = new List<string>();
 
-            if (httpRequest.Files.Count > 0)
+            foreach (var formFile in files)
             {
-                for (int i = 0; i < uploadFiles.Count; i++)
+                if (formFile.Length > 0)
                 {
-                    HttpPostedFile postedFile = uploadFiles[i];
-                    var filePath = HttpContext.Current.Server.MapPath("~/" + postedFile.FileName);
-                    postedFile.SaveAs(filePath);
+                    var filePath = Path.GetTempFileName().Replace(".tmp", ".pdf");
+
+                    using (var stream = System.IO.File.Create(filePath))
+                    {
+                        await formFile.CopyToAsync(stream);
+                    }
+
                     docfiles.Add(filePath);
                 }
-
-                // запуск библиотеки
-                Merge merge = new Merge();
-                string res = merge.MergeDocs(docfiles);
-
-                string fileName = "sample.pdf";
-                var dataBytes = File.ReadAllBytes(res);
-                var dataStream = new MemoryStream(dataBytes);
-
-                HttpResponseMessage httpResponseMessage = Request.CreateResponse(HttpStatusCode.OK);
-                httpResponseMessage.Content = new StreamContent(dataStream);
-                httpResponseMessage.Content.Headers.ContentDisposition = new System.Net.Http.Headers.ContentDispositionHeaderValue("attachment")
-                {
-                    FileName = fileName
-                };
-                httpResponseMessage.Content.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/octet-stream");
-                httpResponseMessage.Content.Headers.ContentLength = dataStream.Length;
-
-                result = httpResponseMessage;
-            }
-            else
-            {
-                result = Request.CreateResponse(HttpStatusCode.BadRequest);
             }
 
-            return result;
+            // запуск библиотеки
+            Merge merge = new Merge();
+            string res = merge.MergeDocs(docfiles);
+
+            string fileName = "sample.pdf";
+            var mimeType = "application/octet-stream";
+
+            //Stream fileStream = new FileStream(res, FileMode.Create);
+
+            //return new FileStreamResult(fileStream, mimeType)
+            //{
+            //    FileDownloadName = fileName
+            //};
+
+            // отладка
+            return StatusCode(200, res);
         }
     }
 }

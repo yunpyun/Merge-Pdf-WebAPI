@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "GBx3fvMddu+woHnmuudSd4hw88IRng63c5yuqycZehZusa2uscGEBynZNmEujNX8f/o9rQ0TwVx6oabXsjvuKQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Выймова Елена\\Desktop\\Материалы для работы\\ПП\\GitHub Repositories\\Merge-Pdf-WebAPI\\MergePdfLib\\MergePdfLib.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Выймова Елена\\.nuget\\packages\\gembox.document\\35.0.1000\\gembox.document.35.0.1000.nupkg.sha512",
+    "C:\\Users\\Выймова Елена\\.nuget\\packages\\gembox.pdf\\17.0.1158\\gembox.pdf.17.0.1158.nupkg.sha512",
+    "C:\\Users\\Выймова Елена\\.nuget\\packages\\harfbuzzsharp\\2.6.1.7\\harfbuzzsharp.2.6.1.7.nupkg.sha512",
+    "C:\\Users\\Выймова Елена\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\Выймова Елена\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\Выймова Елена\\.nuget\\packages\\pkcs11interop\\5.1.1\\pkcs11interop.5.1.1.nupkg.sha512",
+    "C:\\Users\\Выймова Елена\\.nuget\\packages\\portable.bouncycastle\\1.8.9\\portable.bouncycastle.1.8.9.nupkg.sha512",
+    "C:\\Users\\Выймова Елена\\.nuget\\packages\\system.drawing.common\\5.0.0\\system.drawing.common.5.0.0.nupkg.sha512",
+    "C:\\Users\\Выймова Елена\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\Выймова Елена\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "C:\\Users\\Выймова Елена\\.nuget\\packages\\system.text.encoding.codepages\\5.0.0\\system.text.encoding.codepages.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

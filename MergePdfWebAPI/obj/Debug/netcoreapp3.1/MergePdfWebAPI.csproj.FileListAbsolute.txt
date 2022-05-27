@@ -1,0 +1,86 @@
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\MergePdfWebAPI.exe
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\MergePdfWebAPI.deps.json
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\MergePdfWebAPI.runtimeconfig.json
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\MergePdfWebAPI.runtimeconfig.dev.json
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\MergePdfWebAPI.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\MergePdfWebAPI.pdb
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\GemBox.Document.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\GemBox.Pdf.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\HarfBuzzSharp.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\Pkcs11Interop.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\GemBox.Document.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\GemBox.Pdf.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\runtimes\osx\native\libHarfBuzzSharp.dylib
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\libHarfBuzzSharp.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\libHarfBuzzSharp.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\libHarfBuzzSharp.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\MergePdfLib.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\MergePdfLib.pdb
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\obj\Debug\netcoreapp3.1\MergePdfWebAPI.csproj.AssemblyReference.cache
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\obj\Debug\netcoreapp3.1\MergePdfWebAPI.AssemblyInfoInputs.cache
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\obj\Debug\netcoreapp3.1\MergePdfWebAPI.AssemblyInfo.cs
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\obj\Debug\netcoreapp3.1\MergePdfWebAPI.csproj.CoreCompileInputs.cache
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\obj\Debug\netcoreapp3.1\MergePdfWebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\obj\Debug\netcoreapp3.1\staticwebassets\MergePdfWebAPI.StaticWebAssets.Manifest.cache
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\obj\Debug\netcoreapp3.1\staticwebassets\MergePdfWebAPI.StaticWebAssets.xml
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\obj\Debug\netcoreapp3.1\scopedcss\bundle\MergePdfWebAPI.styles.css
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\obj\Debug\netcoreapp3.1\MergePdfWebAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\obj\Debug\netcoreapp3.1\MergePdfWebAPI.csproj.CopyComplete
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\obj\Debug\netcoreapp3.1\MergePdfWebAPI.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\obj\Debug\netcoreapp3.1\MergePdfWebAPI.pdb
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\obj\Debug\netcoreapp3.1\MergePdfWebAPI.genruntimeconfig.cache
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\Объединение файлов в pdf\AspNetCore\MergePdfWebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\MergePdfWebAPI.Views.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\MergePdfWebAPI.exe
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\MergePdfWebAPI.deps.json
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\MergePdfWebAPI.runtimeconfig.json
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\MergePdfWebAPI.runtimeconfig.dev.json
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\MergePdfWebAPI.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\MergePdfWebAPI.pdb
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\MergePdfWebAPI.Views.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\GemBox.Document.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\GemBox.Pdf.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\HarfBuzzSharp.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\Pkcs11Interop.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\GemBox.Document.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\GemBox.Pdf.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\runtimes\osx\native\libHarfBuzzSharp.dylib
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\libHarfBuzzSharp.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\libHarfBuzzSharp.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\libHarfBuzzSharp.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\MergePdfLib.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\bin\Debug\netcoreapp3.1\MergePdfLib.pdb
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\obj\Debug\netcoreapp3.1\MergePdfWebAPI.csproj.AssemblyReference.cache
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\obj\Debug\netcoreapp3.1\MergePdfWebAPI.AssemblyInfoInputs.cache
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\obj\Debug\netcoreapp3.1\MergePdfWebAPI.AssemblyInfo.cs
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\obj\Debug\netcoreapp3.1\MergePdfWebAPI.csproj.CoreCompileInputs.cache
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\obj\Debug\netcoreapp3.1\MergePdfWebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\obj\Debug\netcoreapp3.1\staticwebassets\MergePdfWebAPI.StaticWebAssets.Manifest.cache
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\obj\Debug\netcoreapp3.1\staticwebassets\MergePdfWebAPI.StaticWebAssets.xml
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\obj\Debug\netcoreapp3.1\scopedcss\bundle\MergePdfWebAPI.styles.css
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\obj\Debug\netcoreapp3.1\MergePdfWebAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\obj\Debug\netcoreapp3.1\MergePdfWebAPI.csproj.CopyComplete
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\obj\Debug\netcoreapp3.1\MergePdfWebAPI.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\obj\Debug\netcoreapp3.1\MergePdfWebAPI.pdb
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfWebAPI\obj\Debug\netcoreapp3.1\MergePdfWebAPI.genruntimeconfig.cache

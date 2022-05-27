@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
 using GemBox.Document;
 using GemBox.Pdf;
@@ -26,9 +23,7 @@ namespace MergePdfLib
                 }
             }
 
-            var tempFiles = Path.GetTempFileName().Replace(".tmp", ".pdf");
-
-            MergeFiles(docs, tempFiles);
+            string tempFiles = MergeFiles(docs);
 
             return tempFiles;
         }
@@ -36,21 +31,25 @@ namespace MergePdfLib
         static string SaveDoc(string destFileName)
         {
             DocumentModel documentDoc = DocumentModel.Load(destFileName);
-            string newName = Path.GetTempFileName().Replace(".tmp", ".pdf");
-            documentDoc.Save(newName);
-            return newName;
+            string newNameTemp = Path.GetTempFileName().Replace(".tmp", ".pdf");
+            documentDoc.Save(newNameTemp);
+            return newNameTemp;
         }
 
-        static void MergeFiles(List<string> fileNames, string tempFiles)
+        static string MergeFiles(List<string> fileNames)
         {
+            string newNameFilesTemp = Path.GetTempFileName().Replace(".tmp", ".pdf");
+
             using (PdfDocument documentPdf = new PdfDocument())
             {
                 foreach (var fileName in fileNames)
                     using (var source = PdfDocument.Load(fileName))
                         documentPdf.Pages.Kids.AddClone(source.Pages);
 
-                documentPdf.Save(tempFiles);
+                documentPdf.Save(newNameFilesTemp);
             }
+
+            return newNameFilesTemp;
         }
     }
 }
