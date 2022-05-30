@@ -32,14 +32,15 @@ namespace MergePdfWebAPI.Controllers
             {
                 if (formFile.Length > 0)
                 {
-                    var filePath = Path.GetTempFileName().Replace(".tmp", ".pdf");
+                    var filePath = Path.GetTempPath();
+                    var fileName = filePath + formFile.FileName;
 
-                    using (var stream = System.IO.File.Create(filePath))
+                    using (var stream = System.IO.File.Create(fileName))
                     {
                         await formFile.CopyToAsync(stream);
                     }
 
-                    docfiles.Add(filePath);
+                    docfiles.Add(fileName);
                 }
             }
 
@@ -47,7 +48,7 @@ namespace MergePdfWebAPI.Controllers
             Merge merge = new Merge();
             string res = merge.MergeDocs(docfiles);
 
-            string fileName = "sample.pdf";
+            string outputFileName = "sample.pdf";
             var mimeType = "application/octet-stream";
 
             //Stream fileStream = new FileStream(res, FileMode.Create);
