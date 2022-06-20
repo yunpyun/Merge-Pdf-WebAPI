@@ -48,15 +48,11 @@ namespace MergePdfWebAPI.Controllers
             Merge merge = new Merge();
             string res = merge.MergeDocs(docfiles);
 
-            string outputFileName = "sample.pdf";
-            var mimeType = "application/octet-stream";
+            var mimeType = "application/pdf";
 
-            var fileStream = System.IO.File.OpenRead(res);
+            var fileStream = new FileStream(res, FileMode.Open);
 
-            return new Microsoft.AspNetCore.Mvc.FileStreamResult(fileStream, mimeType)
-            {
-                FileDownloadName = outputFileName
-            };
+            return new Microsoft.AspNetCore.Mvc.FileStreamResult(fileStream, mimeType);
         }
     }
 }

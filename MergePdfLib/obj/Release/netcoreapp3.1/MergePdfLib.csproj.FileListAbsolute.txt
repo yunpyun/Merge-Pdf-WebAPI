@@ -1,0 +1,9 @@
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfLib\bin\Release\netcoreapp3.1\MergePdfLib.deps.json
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfLib\bin\Release\netcoreapp3.1\MergePdfLib.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfLib\bin\Release\netcoreapp3.1\MergePdfLib.pdb
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfLib\obj\Release\netcoreapp3.1\MergePdfLib.csproj.AssemblyReference.cache
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfLib\obj\Release\netcoreapp3.1\MergePdfLib.AssemblyInfoInputs.cache
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfLib\obj\Release\netcoreapp3.1\MergePdfLib.AssemblyInfo.cs
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfLib\obj\Release\netcoreapp3.1\MergePdfLib.csproj.CoreCompileInputs.cache
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfLib\obj\Release\netcoreapp3.1\MergePdfLib.dll
+C:\Users\Выймова Елена\Desktop\Материалы для работы\ПП\GitHub Repositories\Merge-Pdf-WebAPI\MergePdfLib\obj\Release\netcoreapp3.1\MergePdfLib.pdb
