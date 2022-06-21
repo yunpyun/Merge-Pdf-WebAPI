@@ -50,7 +50,7 @@ namespace MergePdfWebAPI.Controllers
 
             var mimeType = "application/pdf";
 
-            var fileStream = new FileStream(res, FileMode.Open);
+            var fileStream = new FileStream(res, FileMode.Open, FileAccess.Read);
 
             return new Microsoft.AspNetCore.Mvc.FileStreamResult(fileStream, mimeType);
         }

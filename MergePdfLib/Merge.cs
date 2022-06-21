@@ -51,5 +51,22 @@ namespace MergePdfLib
 
             return newNameFilesTemp;
         }
+
+        public int CountPages(string file)
+        {
+            GemBox.Pdf.ComponentInfo.SetLicense("FREE-LIMITED-KEY");
+
+            int counter = 0;
+
+            using (var document = PdfDocument.Load(file))
+            {
+                foreach (var page in document.Pages)
+                {
+                    counter++;
+                }
+            }
+
+            return counter;
+        }
     }
 }
