@@ -20,14 +20,14 @@ namespace MergePdfWebAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<int> PageCounting(IFormFile file)
+        public int PageCounting(IFormFile file)
         {
             var filePath = Path.GetTempPath();
             var fileName = filePath + file.FileName;
 
             using (var stream = System.IO.File.Create(fileName))
             {
-                await file.CopyToAsync(stream);
+                file.CopyTo(stream);
             }
 
             // запуск библиотеки

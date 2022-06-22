@@ -24,7 +24,7 @@ namespace MergePdfWebAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Upload(List<IFormFile> files)
+        public IActionResult Upload(List<IFormFile> files)
         {
             var docfiles = new List<string>();
 
@@ -37,7 +37,7 @@ namespace MergePdfWebAPI.Controllers
 
                     using (var stream = System.IO.File.Create(fileName))
                     {
-                        await formFile.CopyToAsync(stream);
+                        formFile.CopyTo(stream);
                     }
 
                     docfiles.Add(fileName);
