@@ -20,39 +20,49 @@ namespace MergePdfWebAPI.Controllers
         [HttpGet]
         public string Get()
         {
-            return "result get";
+            return "result get UploadFile";
         }
 
         [HttpPost]
-        public IActionResult Upload(List<IFormFile> files)
+        public async Task<IActionResult> Upload()
         {
-            var docfiles = new List<string>();
+            List<IFormFile> files = Request.Form.Files.ToList();
 
-            foreach (var formFile in files)
+            if (files.Count > 0)
             {
-                if (formFile.Length > 0)
+                var docfiles = new List<string>();
+
+                foreach (var formFile in files)
                 {
-                    var filePath = Path.GetTempPath();
-                    var fileName = filePath + formFile.FileName;
-
-                    using (var stream = System.IO.File.Create(fileName))
+                    if (formFile.Length > 0)
                     {
-                        formFile.CopyTo(stream);
-                    }
+                        var filePath = Path.GetTempPath();
+                        var fileName = filePath + formFile.FileName;
 
-                    docfiles.Add(fileName);
+                        using (var stream = System.IO.File.Create(fileName))
+                        {
+                            await formFile.CopyToAsync(stream);
+                        }
+
+                        docfiles.Add(fileName);
+                    }
                 }
+
+                // запуск библиотеки
+                Merge merge = new Merge();
+                string res = merge.MergeDocs(docfiles);
+
+                var mimeType = "application/pdf";
+
+                var fileStream = new FileStream(res, FileMode.Open, FileAccess.Read);
+
+                return new Microsoft.AspNetCore.Mvc.FileStreamResult(fileStream, mimeType);
+            }
+            else
+            {
+                return NotFound("Входные файлы не найдены");
             }
 
-            // запуск библиотеки
-            Merge merge = new Merge();
-            string res = merge.MergeDocs(docfiles);
-
-            var mimeType = "application/pdf";
-
-            var fileStream = new FileStream(res, FileMode.Open, FileAccess.Read);
-
-            return new Microsoft.AspNetCore.Mvc.FileStreamResult(fileStream, mimeType);
         }
     }
 }

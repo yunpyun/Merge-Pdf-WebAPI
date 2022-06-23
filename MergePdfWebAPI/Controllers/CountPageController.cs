@@ -16,25 +16,33 @@ namespace MergePdfWebAPI.Controllers
         [HttpGet]
         public string Get()
         {
-            return "result get";
+            return "result get CountPage";
         }
 
         [HttpPost]
-        public int PageCounting(IFormFile file)
+        public async Task<int> PageCounting()
         {
-            var filePath = Path.GetTempPath();
-            var fileName = filePath + file.FileName;
+            IFormFile file = Request.Form.Files.FirstOrDefault();
 
-            using (var stream = System.IO.File.Create(fileName))
-            {
-                file.CopyTo(stream);
+            if (file != null) {
+                var filePath = Path.GetTempPath();
+                var fileName = filePath + file.FileName;
+
+                using (var stream = System.IO.File.Create(fileName))
+                {
+                    await file.CopyToAsync(stream);
+                }
+
+                // запуск библиотеки
+                Merge merge = new Merge();
+                int res = merge.CountPages(fileName);
+
+                return res;
             }
-
-            // запуск библиотеки
-            Merge merge = new Merge();
-            int res = merge.CountPages(fileName);
-
-            return res;
+            else
+            {
+                return 0;
+            }
         }
     }
 }
