@@ -8,9 +8,6 @@ namespace MergePdfLib
 {
     public class Merge
     {
-        string pdf_key = Environment.GetEnvironmentVariable("GEMBOX_ELMA365_KEY_PDF") ?? "FREE-LIMITED-KEY";
-        string doc_key = Environment.GetEnvironmentVariable("GEMBOX_ELMA365_KEY_DOC") ?? "FREE-LIMITED-KEY";
-
         /// <summary>
         /// Функция, вызываемая из api. Проверяет, есть ли doc-файлы и возвращает путь с объединенным pdf-файлом
         /// </summary>
@@ -19,6 +16,14 @@ namespace MergePdfLib
         public string MergeDocs(List<string> docs)
         {
             // лицензирование GemBox
+            string doc_key = Environment.GetEnvironmentVariable("GEMBOX_ELMA365_KEY_DOC") != null
+                ? Environment.GetEnvironmentVariable("GEMBOX_ELMA365_KEY_DOC")
+                : "FREE-LIMITED-KEY";
+
+            string pdf_key = Environment.GetEnvironmentVariable("GEMBOX_ELMA365_KEY_PDF") != null
+                ? Environment.GetEnvironmentVariable("GEMBOX_ELMA365_KEY_PDF")
+                : "FREE-LIMITED-KEY";
+
             GemBox.Document.ComponentInfo.SetLicense(doc_key);
             GemBox.Pdf.ComponentInfo.SetLicense(pdf_key);
 
@@ -79,6 +84,10 @@ namespace MergePdfLib
         /// <returns>Количество страниц в файле</returns>
         public int CountPages(string file)
         {
+            string pdf_key = Environment.GetEnvironmentVariable("GEMBOX_ELMA365_KEY_PDF") != null 
+                ? Environment.GetEnvironmentVariable("GEMBOX_ELMA365_KEY_PDF") 
+                : "FREE-LIMITED-KEY";
+
             GemBox.Pdf.ComponentInfo.SetLicense(pdf_key);
 
             using var document = PdfDocument.Load(file);

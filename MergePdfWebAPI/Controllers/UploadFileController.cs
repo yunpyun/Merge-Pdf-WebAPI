@@ -30,33 +30,40 @@ namespace MergePdfWebAPI.Controllers
 
             if (files.Count > 0)
             {
-                var docfiles = new List<string>();
-
-                foreach (var formFile in files)
+                try
                 {
-                    if (formFile.Length > 0)
+                    var docfiles = new List<string>();
+
+                    foreach (var formFile in files)
                     {
-                        var filePath = Path.GetTempPath();
-                        var fileName = filePath + formFile.FileName;
-
-                        using (var stream = System.IO.File.Create(fileName))
+                        if (formFile.Length > 0)
                         {
-                            await formFile.CopyToAsync(stream);
+                            var filePath = Path.GetTempPath();
+                            var fileName = filePath + formFile.FileName;
+
+                            using (var stream = System.IO.File.Create(fileName))
+                            {
+                                await formFile.CopyToAsync(stream);
+                            }
+
+                            docfiles.Add(fileName);
                         }
-
-                        docfiles.Add(fileName);
                     }
+
+                    // запуск библиотеки
+                    Merge merge = new Merge();
+                    string res = merge.MergeDocs(docfiles);
+
+                    var mimeType = "application/pdf";
+
+                    var fileStream = new FileStream(res, FileMode.Open, FileAccess.Read);
+
+                    return new Microsoft.AspNetCore.Mvc.FileStreamResult(fileStream, mimeType);
                 }
-
-                // запуск библиотеки
-                Merge merge = new Merge();
-                string res = merge.MergeDocs(docfiles);
-
-                var mimeType = "application/pdf";
-
-                var fileStream = new FileStream(res, FileMode.Open, FileAccess.Read);
-
-                return new Microsoft.AspNetCore.Mvc.FileStreamResult(fileStream, mimeType);
+                catch (Exception err)
+                {
+                    return StatusCode(500, err.Message);
+                }
             }
             else
             {

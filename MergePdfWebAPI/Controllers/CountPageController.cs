@@ -49,7 +49,7 @@ namespace MergePdfWebAPI.Controllers
             }
             else
             {
-                return BadRequest("file is null");
+                return NotFound("Входные файлы не найдены");
             }
         }
     }
