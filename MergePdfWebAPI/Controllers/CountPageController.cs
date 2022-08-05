@@ -40,6 +40,13 @@ namespace MergePdfWebAPI.Controllers
                     Merge merge = new Merge();
                     int res = merge.CountPages(fileName);
 
+                    FileInfo fileInf = new FileInfo(fileName);
+
+                    if (fileInf.Exists)
+                    {
+                        fileInf.Delete();
+                    }
+
                     return StatusCode(200, res);
                 }
                 catch (Exception err) 

@@ -54,6 +54,16 @@ namespace MergePdfWebAPI.Controllers
                     Merge merge = new Merge();
                     string res = merge.MergeDocs(docfiles);
 
+                    foreach (var onefile in docfiles)
+                    {
+                        FileInfo fileInf = new FileInfo(onefile);
+
+                        if (fileInf.Exists)
+                        {
+                            fileInf.Delete();
+                        }
+                    }
+
                     var mimeType = "application/pdf";
 
                     var fileStream = new FileStream(res, FileMode.Open, FileAccess.Read);
