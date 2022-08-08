@@ -39,7 +39,7 @@ namespace MergePdfWebAPI.Controllers
                         if (formFile.Length > 0)
                         {
                             var filePath = Path.GetTempPath();
-                            var fileName = filePath + formFile.FileName;
+                            var fileName = filePath + Guid.NewGuid().ToString() + "-" + formFile.FileName;
 
                             using (var stream = System.IO.File.Create(fileName))
                             {
@@ -66,7 +66,8 @@ namespace MergePdfWebAPI.Controllers
 
                     var mimeType = "application/pdf";
 
-                    var fileStream = new FileStream(res, FileMode.Open, FileAccess.Read);
+                    var fileStream = new FileStream(res, FileMode.Open, FileAccess.Read, FileShare.None, 
+                        4096, FileOptions.DeleteOnClose);
 
                     return new Microsoft.AspNetCore.Mvc.FileStreamResult(fileStream, mimeType);
                 }

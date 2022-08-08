@@ -49,7 +49,7 @@ namespace MergePdfLib
         static string ConvertDocToPdf(string destFileName)
         {
             DocumentModel documentDoc = DocumentModel.Load(destFileName);
-            string newNameTemp = Path.GetTempFileName().Replace(".tmp", ".pdf");
+            string newNameTemp = Path.GetTempPath() + Guid.NewGuid().ToString() + ".pdf";
             documentDoc.Save(newNameTemp);
             return newNameTemp;
         }
@@ -61,7 +61,8 @@ namespace MergePdfLib
         /// <returns>Путь до объединенного pdf-файла</returns>
         static string MergeFiles(List<string> fileNames)
         {
-            string newNameFilesTemp = Path.GetTempFileName().Replace(".tmp", ".pdf");
+            // формирование пути для сохранения файла
+            string newNameFilesTemp = Path.GetTempPath() + Guid.NewGuid().ToString() + "-MergedPdf" + ".pdf";
 
             using (PdfDocument documentPdf = new PdfDocument())
             {
