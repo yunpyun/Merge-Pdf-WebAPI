@@ -27,7 +27,7 @@ namespace MergePdfLib
             GemBox.Document.ComponentInfo.SetLicense(doc_key);
             GemBox.Pdf.ComponentInfo.SetLicense(pdf_key);
 
-            // конвертация из исходного массива doc-файлов в pdf
+            // конвертация из исходного массива doc-файлов в pdf-файлы
             for (int i = 0; i < docs.Count; i++)
             {
                 if (docs[i].EndsWith(".doc") || docs[i].EndsWith(".docx"))
@@ -36,6 +36,7 @@ namespace MergePdfLib
                 }
             }
 
+            // объединение массива файлов в один файл и получение его пути
             string tempFiles = MergeFiles(docs);
 
             return tempFiles;
@@ -48,9 +49,20 @@ namespace MergePdfLib
         /// <returns>Путь до pdf-файла, сконвертированного из doc</returns>
         static string ConvertDocToPdf(string destFileName)
         {
+            // загрузка doc-файла
             DocumentModel documentDoc = DocumentModel.Load(destFileName);
+            // формирование пути для pdf-файла
             string newNameTemp = Path.GetTempPath() + Guid.NewGuid().ToString() + ".pdf";
+            // конвертация doc в pdf
             documentDoc.Save(newNameTemp);
+
+            // удаление из временной папки уже ненужного doc-файла
+            FileInfo fileInf = new FileInfo(destFileName);
+            if (fileInf.Exists)
+            {
+                fileInf.Delete();
+            }
+
             return newNameTemp;
         }
 
@@ -61,9 +73,10 @@ namespace MergePdfLib
         /// <returns>Путь до объединенного pdf-файла</returns>
         static string MergeFiles(List<string> fileNames)
         {
-            // формирование пути для сохранения файла
+            // формирование пути для сохранения итогового файла
             string newNameFilesTemp = Path.GetTempPath() + Guid.NewGuid().ToString() + "-MergedPdf" + ".pdf";
 
+            // объединение pdf-файлов в один документ
             using (PdfDocument documentPdf = new PdfDocument())
             {
                 foreach (var fileName in fileNames)
@@ -91,6 +104,7 @@ namespace MergePdfLib
 
             GemBox.Pdf.ComponentInfo.SetLicense(pdf_key);
 
+            // загрузка pdf-документа
             using var document = PdfDocument.Load(file);
             return document.Pages.Count;
         }

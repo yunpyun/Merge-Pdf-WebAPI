@@ -22,24 +22,25 @@ namespace MergePdfWebAPI.Controllers
         [HttpPost]
         public async Task<IActionResult> PageCounting()
         {
-            IFormFile file = Request.Form.Files.FirstOrDefault();
+            IFormFile formFile = Request.Form.Files.FirstOrDefault();
 
-            if (file != null) 
+            if (formFile != null) 
             {
                 try 
                 {
                     var filePath = Path.GetTempPath();
-                    var fileName = filePath + file.FileName;
+                    var fileName = filePath + Guid.NewGuid().ToString() + "-" + formFile.FileName;
 
                     using (var stream = System.IO.File.Create(fileName))
                     {
-                        await file.CopyToAsync(stream);
+                        await formFile.CopyToAsync(stream);
                     }
 
                     // запуск библиотеки
                     Merge merge = new Merge();
                     int res = merge.CountPages(fileName);
 
+                    // удаление из временной папки входного файла, для которого считалось количество страниц
                     FileInfo fileInf = new FileInfo(fileName);
 
                     if (fileInf.Exists)

@@ -5,11 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.IO;
-using System.Net;
-using System.Net.Http;
-using System.Web;
 using MergePdfLib;
-using Microsoft.AspNetCore.Hosting;
 
 namespace MergePdfWebAPI.Controllers
 {
@@ -54,6 +50,7 @@ namespace MergePdfWebAPI.Controllers
                     Merge merge = new Merge();
                     string res = merge.MergeDocs(docfiles);
 
+                    // удаление из временной папки использованных pdf-файлов, из которых был собран итоговый файл
                     foreach (var onefile in docfiles)
                     {
                         FileInfo fileInf = new FileInfo(onefile);
@@ -66,6 +63,7 @@ namespace MergePdfWebAPI.Controllers
 
                     var mimeType = "application/pdf";
 
+                    // создание объекта для возврата из метода с настройкой удаления возвращаемого файла после использования
                     var fileStream = new FileStream(res, FileMode.Open, FileAccess.Read, FileShare.None, 
                         4096, FileOptions.DeleteOnClose);
 
@@ -80,7 +78,6 @@ namespace MergePdfWebAPI.Controllers
             {
                 return NotFound("Входные файлы не найдены");
             }
-
         }
     }
 }
